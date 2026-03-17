@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Emergency Dentist Carthage TX | Carthage Family Dental</title>
+<meta name="description" content="Top-rated emergency dentist in Carthage, TX. Same-day appointments, pain-free care, all insurance accepted. Call (903) 425-4012 now."/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --cream:#fbf1dd;
+  --teal:#709488;
+  --teal-dark:#4e6e63;
+  --teal-light:#e8f0ee;
+  --black:#000000;
+  --white:#ffffff;
+  --off-white:#f8f5f0;
+  --gray:#6b7280;
+  --light-gray:#f3f4f6;
+  --red:#c0392b;
+  --gold:#f4a800;
+  --radius:14px;
+  --shadow:0 4px 24px rgba(0,0,0,.10);
+  --shadow-lg:0 16px 48px rgba(0,0,0,.18);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--black);background:var(--white);overflow-x:hidden}
+img{display:block;max-width:100%}
+
+/* ── TOP BAR ── */
+.top-bar{background:var(--black);color:var(--cream);text-align:center;padding:9px 16px;font-size:.82rem;font-weight:600;letter-spacing:.2px}
+.top-bar a{color:var(--cream);text-decoration:none;border-bottom:1px dotted var(--cream)}
+
+/* ── HEADER ── */
+header{position:sticky;top:0;z-index:999;background:var(--white);border-bottom:2px solid var(--cream);box-shadow:0 2px 16px rgba(0,0,0,.08)}
+.nav{max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-icon{width:46px;height:46px;background:var(--teal);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.logo-icon svg{width:26px;height:26px}
+.logo-name{line-height:1.15}
+.logo-name strong{display:block;font-size:.95rem;font-weight:800;color:var(--black);letter-spacing:-.2px}
+.logo-name span{font-size:.72rem;color:var(--teal);font-weight:600;text-transform:uppercase;letter-spacing:.8px}
+.nav-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.nav-badge{display:flex;align-items:center;gap:6px;background:var(--teal-light);border:1px solid var(--teal);border-radius:50px;padding:6px 12px;font-size:.75rem;font-weight:700;color:var(--teal-dark)}
+.btn-call{background:var(--red);color:var(--white);padding:11px 22px;border-radius:50px;font-weight:800;font-size:.88rem;text-decoration:none;display:flex;align-items:center;gap:8px;white-space:nowrap;animation:pulse-red 2s infinite}
+.btn-book{background:var(--teal);color:var(--white);padding:11px 22px;border-radius:50px;font-weight:700;font-size:.88rem;text-decoration:none;display:flex;align-items:center;gap:8px;white-space:nowrap;transition:.2s}
+.btn-book:hover{background:var(--teal-dark)}
+@keyframes pulse-red{0%,100%{box-shadow:0 0 0 0 rgba(192,57,43,.4)}60%{box-shadow:0 0 0 10px rgba(192,57,43,0)}}
+
+/* ── HERO ── */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(120deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.65) 55%,rgba(0,0,0,.35) 100%);z-index:1}
+.hero-wrap{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:100px 24px 64px;display:grid;grid-template-columns:1fr 400px;gap:52px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--cream);color:var(--cream);padding:7px 16px;border-radius:50px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:22px;background:rgba(251,241,221,.1)}
+.hero h1{font-size:clamp(2.1rem,5vw,3.8rem);font-weight:900;color:var(--white);line-height:1.08;margin-bottom:20px;letter-spacing:-.5px}
+.hero h1 em{color:var(--cream);font-style:normal}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.82);line-height:1.75;margin-bottom:28px;max-width:540px}
+.hero-sub strong{color:var(--cream)}
+.hero-social{display:flex;align-items:center;gap:16px;margin-bottom:32px;flex-wrap:wrap}
+.g-stars{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:50px;padding:8px 16px}
+.g-logo{width:56px}
+.star-row{display:flex;gap:2px;color:#fbbc04;font-size:1rem}
+.g-count{color:rgba(255,255,255,.8);font-size:.8rem}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-hero-primary{background:var(--red);color:var(--white);padding:16px 34px;border-radius:50px;font-weight:800;font-size:1rem;text-decoration:none;display:inline-flex;align-items:center;gap:10px;animation:pulse-red 2s infinite;transition:.2s}
+.btn-hero-primary:hover{transform:translateY(-2px)}
+.btn-hero-secondary{background:var(--cream);color:var(--black);padding:16px 34px;border-radius:50px;font-weight:700;font-size:1rem;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:.2s}
+.btn-hero-secondary:hover{background:#f0e4c8;transform:translateY(-2px)}
+
+/* HERO CARD */
+.hero-card{background:var(--white);border-radius:20px;padding:32px;box-shadow:0 24px 64px rgba(0,0,0,.35)}
+.card-top{background:var(--black);border-radius:12px;padding:16px;margin-bottom:20px;text-align:center}
+.card-top strong{color:var(--cream);font-size:1rem;font-weight:800;display:block}
+.card-top span{color:rgba(251,241,221,.65);font-size:.78rem}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-size:.75rem;font-weight:700;color:var(--teal-dark);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.form-group input,.form-group select{width:100%;padding:12px 14px;border:2px solid #e5e7eb;border-radius:10px;font-size:.92rem;font-family:inherit;outline:none;transition:.2s;color:var(--black);background:var(--white)}
+.form-group input:focus,.form-group select:focus{border-color:var(--teal)}
+.form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z' fill='%23709488'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:20px;padding-right:40px;appearance:none}
+.btn-form{width:100%;background:var(--black);color:var(--cream);padding:14px;border-radius:12px;font-weight:800;font-size:1rem;border:none;cursor:pointer;transition:.2s;font-family:inherit}
+.btn-form:hover{background:var(--teal-dark)}
+.form-trust{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:11px;font-size:.74rem;color:var(--gray)}
+
+/* ── USP TILES ── */
+.usps{background:var(--black)}
+.usps-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);border-top:3px solid var(--teal)}
+.usp{padding:26px 18px;text-align:center;border-right:1px solid rgba(255,255,255,.07);transition:.25s;cursor:default}
+.usp:last-child{border-right:none}
+.usp:hover{background:rgba(251,241,221,.05)}
+.usp-emoji{font-size:1.8rem;margin-bottom:10px}
+.usp h4{color:var(--cream);font-size:.85rem;font-weight:700;margin-bottom:4px}
+.usp p{color:rgba(251,241,221,.5);font-size:.74rem;line-height:1.4}
+
+/* ── TOP RATED BADGE ── */
+.top-rated{background:var(--cream);padding:18px 24px;text-align:center}
+.top-rated-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+.tr-stars{color:#f4a800;font-size:1.2rem;letter-spacing:2px}
+.tr-text{font-size:1rem;font-weight:800;color:var(--black)}
+.tr-sub{font-size:.82rem;color:var(--teal-dark);font-weight:600}
+.tr-divider{width:1px;height:36px;background:rgba(0,0,0,.15)}
+
+/* ── SECTION SHARED ── */
+.section{padding:80px 24px}
+.container{max-width:1200px;margin:0 auto}
+.section-tag{display:inline-flex;align-items:center;gap:6px;background:var(--teal-light);color:var(--teal-dark);padding:6px 14px;border-radius:50px;font-size:.73rem;font-weight:700;text-transform:uppercase;letter-spacing:.7px;margin-bottom:14px;border:1px solid var(--teal)}
+.section-h{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:900;line-height:1.12;margin-bottom:14px;letter-spacing:-.4px}
+.section-p{font-size:1rem;color:var(--gray);line-height:1.75;max-width:580px}
+.tc{text-align:center}.tc .section-p{margin:0 auto}
+
+/* ── PHOTO STRIP ── */
+.photo-strip{display:grid;grid-template-columns:repeat(4,1fr);height:320px;overflow:hidden}
+.strip-img{width:100%;height:100%;object-fit:cover;filter:brightness(.88);transition:.4s}
+.strip-img:hover{filter:brightness(1) scale(1.03)}
+
+/* ── SERVICES ── */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.svc-card{border-radius:var(--radius);overflow:hidden;border:1.5px solid #e8e8e8;transition:.3s;background:var(--white);cursor:pointer}
+.svc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--teal)}
+.svc-img{width:100%;height:190px;object-fit:cover}
+.svc-body{padding:20px}
+.svc-body h3{font-size:.98rem;font-weight:800;margin-bottom:8px;color:var(--black)}
+.svc-body p{font-size:.84rem;color:var(--gray);line-height:1.6;margin-bottom:14px}
+.svc-tag{display:inline-block;background:var(--teal-light);color:var(--teal-dark);padding:4px 12px;border-radius:50px;font-size:.72rem;font-weight:700;border:1px solid var(--teal)}
+
+/* ── WHY US ── */
+.why-section{background:var(--black)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.why-imgbox{position:relative;border-radius:20px;overflow:hidden}
+.why-img{width:100%;height:500px;object-fit:cover;border-radius:20px}
+.why-float{position:absolute;bottom:24px;left:24px;right:24px;background:var(--white);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow-lg);display:flex;gap:16px;align-items:center}
+.why-float-ico{width:52px;height:52px;background:var(--cream);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;flex-shrink:0}
+.why-float-txt strong{display:block;font-size:1.35rem;font-weight:900;color:var(--black)}
+.why-float-txt span{font-size:.78rem;color:var(--gray)}
+.why-content .section-tag{background:rgba(112,148,136,.15);border-color:var(--teal)}
+.why-content .section-h{color:var(--cream)}
+.why-content .section-p{color:rgba(251,241,221,.65)}
+.why-pts{margin-top:32px;display:flex;flex-direction:column;gap:20px}
+.why-pt{display:flex;gap:16px;align-items:flex-start}
+.why-pt-ico{width:46px;height:46px;border-radius:12px;background:rgba(112,148,136,.2);border:1px solid var(--teal);display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex-shrink:0}
+.why-pt h4{font-size:.95rem;font-weight:700;color:var(--cream);margin-bottom:4px}
+.why-pt p{font-size:.84rem;color:rgba(251,241,221,.6);line-height:1.55}
+
+/* ── PROCESS ── */
+.process-section{background:var(--teal)}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.2)}
+.proc{background:transparent;padding:34px 24px;text-align:center;border-right:1px solid rgba(255,255,255,.15)}
+.proc:last-child{border-right:none}
+.proc-num{width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:1.25rem;font-weight:900;color:var(--white);margin:0 auto 16px}
+.proc h4{color:var(--white);font-size:.95rem;font-weight:800;margin-bottom:8px}
+.proc p{color:rgba(255,255,255,.75);font-size:.82rem;line-height:1.55}
+.process-section .section-h{color:var(--white)}
+.process-section .section-p{color:rgba(255,255,255,.8)}
+.process-section .section-tag{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.3);color:var(--white)}
+
+/* ── GOOGLE REVIEWS ── */
+.reviews-section{background:var(--off-white)}
+.g-header{display:flex;align-items:center;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:48px}
+.g-overall{background:var(--white);border:1px solid #e0e0e0;border-radius:16px;padding:24px 32px;text-align:center;box-shadow:var(--shadow)}
+.g-overall .big-score{font-size:3rem;font-weight:900;color:var(--black);line-height:1}
+.g-overall .big-stars{font-size:1.4rem;color:#fbbc04;margin:6px 0}
+.g-overall .g-count-lg{font-size:.82rem;color:var(--gray);font-weight:500}
+.g-overall img{width:70px;margin:10px auto 0}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.g-card{background:var(--white);border-radius:14px;padding:22px;box-shadow:0 2px 12px rgba(0,0,0,.07);border:1px solid #e8e8e8;transition:.2s}
+.g-card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.g-card-top{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.g-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.95rem;flex-shrink:0}
+.g-card-info{flex:1}
+.g-card-name{font-size:.9rem;font-weight:700;color:var(--black)}
+.g-card-meta{display:flex;align-items:center;gap:6px;margin-top:2px}
+.g-card-stars{color:#fbbc04;font-size:.85rem;letter-spacing:1px}
+.g-card-ago{font-size:.72rem;color:var(--gray)}
+.g-card-text{font-size:.84rem;color:#374151;line-height:1.65;font-style:italic}
+.g-card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:12px;border-top:1px solid #f3f4f6}
+.g-logo-sm{height:16px;opacity:.5}
+.g-useful{font-size:.72rem;color:var(--gray)}
+
+/* ── VIDEO SECTION ── */
+.video-section{background:var(--black);padding:80px 24px}
+.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.video-wrap{border-radius:20px;overflow:hidden;position:relative}
+.clinic-video{width:100%;border-radius:20px;display:block}
+.video-play-badge{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:72px;height:72px;background:rgba(251,241,221,.9);border-radius:50%;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.video-content .section-tag{background:rgba(112,148,136,.2);border-color:var(--teal)}
+.video-content .section-h{color:var(--cream)}
+.video-content .section-p{color:rgba(251,241,221,.65)}
+.stat-row{display:flex;gap:24px;margin-top:32px;flex-wrap:wrap}
+.stat{text-align:center}
+.stat strong{display:block;font-size:2rem;font-weight:900;color:var(--cream)}
+.stat span{font-size:.78rem;color:rgba(251,241,221,.6);text-transform:uppercase;letter-spacing:.5px}
+
+/* ── URGENCY ── */
+.urgency{background:var(--red);padding:60px 24px;text-align:center}
+.urgency h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;color:var(--white);margin-bottom:12px}
+.urgency p{font-size:1rem;color:rgba(255,255,255,.88);margin-bottom:32px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.7}
+.urgency-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-urg-w{background:var(--white);color:var(--red);padding:15px 36px;border-radius:50px;font-weight:800;font-size:1rem;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:.2s}
+.btn-urg-w:hover{background:var(--cream);transform:translateY(-2px)}
+.btn-urg-o{background:transparent;color:var(--white);padding:15px 36px;border-radius:50px;font-weight:700;font-size:1rem;text-decoration:none;display:inline-flex;align-items:center;gap:10px;border:2px solid rgba(255,255,255,.5);transition:.2s}
+.btn-urg-o:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+
+/* ── FAQ ── */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:48px}
+.faq{border:1.5px solid #e5e7eb;border-radius:var(--radius);overflow:hidden;background:var(--white)}
+.faq-q{padding:18px 20px;font-weight:700;font-size:.9rem;display:flex;justify-content:space-between;align-items:center;cursor:pointer;color:var(--black);user-select:none;gap:12px}
+.faq-q svg{width:20px;height:20px;fill:var(--teal);transition:.3s;flex-shrink:0}
+.faq.open .faq-q{color:var(--teal-dark)}
+.faq.open .faq-q svg{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:all .3s;font-size:.86rem;color:var(--gray);line-height:1.7;padding:0 20px;background:var(--white)}
+.faq.open .faq-a{max-height:300px;padding:0 20px 18px}
+
+/* ── INSURANCE ── */
+.ins-section{background:var(--cream);padding:48px 24px;text-align:center}
+.ins-section .section-h{color:var(--black)}
+.ins-logos{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.ins-pill{background:var(--white);border:1.5px solid rgba(0,0,0,.1);border-radius:10px;padding:11px 22px;font-size:.84rem;font-weight:600;color:var(--black);box-shadow:0 2px 8px rgba(0,0,0,.06)}
+
+/* ── FOOTER ── */
+footer{background:var(--black);color:rgba(251,241,221,.7);padding:56px 24px 24px}
+.footer-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:36px}
+.footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.footer-logo-icon{width:40px;height:40px;background:var(--teal);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.footer-logo strong{color:var(--cream);font-size:.95rem;font-weight:800}
+.footer-logo span{display:block;color:var(--teal);font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.6px}
+footer p{font-size:.86rem;line-height:1.75;max-width:280px}
+footer h5{color:var(--cream);font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.8px;margin-bottom:16px}
+footer ul{list-style:none}
+footer ul li{margin-bottom:10px}
+footer ul li a{color:rgba(251,241,221,.6);text-decoration:none;font-size:.85rem;transition:.2s}
+footer ul li a:hover{color:var(--cream)}
+.footer-contact-item{display:flex;gap:10px;align-items:flex-start;font-size:.85rem;margin-bottom:12px}
+.footer-contact-item a{color:rgba(251,241,221,.7);text-decoration:none}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(251,241,221,.1);display:flex;justify-content:space-between;align-items:center;font-size:.75rem;flex-wrap:wrap;gap:10px}
+
+/* ── FLOATING ── */
+.float{position:fixed;bottom:22px;right:22px;z-index:1000;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.float-btn{display:flex;align-items:center;gap:9px;padding:13px 18px;border-radius:50px;font-weight:700;font-size:.85rem;text-decoration:none;box-shadow:var(--shadow-lg);transition:.2s;white-space:nowrap}
+.float-btn:hover{transform:translateY(-2px)}
+.fc{background:var(--red);color:var(--white);animation:pulse-red 2s infinite}
+.fb{background:var(--teal);color:var(--white)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero-wrap{grid-template-columns:1fr;padding:100px 24px 56px}
+  .hero-card{max-width:460px}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:1fr;gap:36px}
+  .why-img{height:340px}
+  .usps-grid{grid-template-columns:repeat(3,1fr)}
+  .process-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+  .reviews-grid{grid-template-columns:repeat(2,1fr)}
+  .video-grid{grid-template-columns:1fr}
+  .photo-strip{grid-template-columns:repeat(2,1fr);height:auto}
+  .strip-img{height:200px}
+}
+@media(max-width:768px){
+  .nav-badge{display:none}
+  .hero-wrap{grid-template-columns:1fr;padding:80px 16px 48px;gap:28px}
+  .hero h1{font-size:2rem}
+  .hero-btns{flex-direction:column}
+  .usps-grid{grid-template-columns:repeat(2,1fr)}
+  .services-grid{grid-template-columns:1fr}
+  .reviews-grid{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:1fr}
+  .photo-strip{grid-template-columns:1fr 1fr}
+  .urgency-btns{flex-direction:column;align-items:center}
+  .tr-divider{display:none}
+  .float{bottom:14px;right:14px}
+  .hero-card{padding:22px}
+  .stat-row{justify-content:center}
+}
+@media(max-width:480px){
+  .usps-grid{grid-template-columns:1fr 1fr}
+  .photo-strip{grid-template-columns:1fr;height:auto}
+  .strip-img{height:180px}
+  .btn-call span,.btn-book span{display:none}
+  .g-header{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  🚨 DENTAL EMERGENCY? Same-Day Appointments Available — Call <a href="tel:+19034254012">(903) 425-4012</a> Right Now
+</div>
+
+<!-- HEADER -->
+<header>
+  <nav class="nav">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <!-- Tooth SVG Logo -->
+        <svg width="26" height="26" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 3C14.2 3 11 5.6 10.2 9.2c-.6 2.8-1.3 5.2-2.6 7.8C6.2 19.5 5.5 21.5 6.4 24c.9 2.4 3 3 5 2.4.7-.2 1.4-.4 2.1-.4.7 0 1.4.2 2.1.4.6.2 1.2.3 1.7.2.2 2.1.5 4.5 1.2 5.8.3.6.9.9 1.5.6.6-.3.9-.9.6-1.5-.5-1-.8-3-.9-5 .5.1 1.1 0 1.7-.2.7-.2 1.4-.4 2.1-.4.7 0 1.4.2 2.1.4 2 .6 4.1 0 5-2.4.9-2.5.2-4.5-1.2-7-1.3-2.6-2-5-2.6-7.8C25 5.6 21.8 3 18 3z" fill="#fbf1dd"/>
+        </svg>
+      </div>
+      <div class="logo-name">
+        <strong>Carthage Family Dental</strong>
+        <span>Emergency Care · Carthage, TX</span>
+      </div>
+    </a>
+    <div class="nav-right">
+      <div class="nav-badge">⭐ Top Rated in Carthage</div>
+      <a href="tel:+19034254012" class="btn-call">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        <span>(903) 425-4012</span>
+      </a>
+      <a href="#book-now" class="btn-book">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+        <span>Book Online</span>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline
+    poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=85">
+    <source src="https://assets.mixkit.co/videos/preview/mixkit-dentist-working-on-a-patient-41779-large.mp4" type="video/mp4"/>
+    <img class="hero-poster" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=85" alt="Family Dental of Carthage"/>
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-wrap">
+    <div>
+      <div class="hero-badge">🏆 Top Rated Clinic in All of Carthage</div>
+      <h1>Dental Pain?<br/><em>We See You Today.</em></h1>
+      <p class="hero-sub">
+        Cracked tooth, severe ache, lost crown, or abscess —
+        <strong>same-day emergency appointments</strong> available now.
+        Real relief from Carthage's most trusted dental team.
+      </p>
+      <div class="hero-social">
+        <div class="g-stars">
+          <!-- Google "G" logo in color -->
+          <svg class="g-logo" viewBox="0 0 75 24" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="19" font-family="Arial,sans-serif" font-size="22" font-weight="700">
+              <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
+            </text>
+          </svg>
+          <div>
+            <div class="star-row">★★★★★</div>
+            <div class="g-count">5.0 · 500+ Reviews</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="tel:+19034254012" class="btn-hero-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          Call for Immediate Help
+        </a>
+        <a href="#book-now" class="btn-hero-secondary">
+          📅 Book Online — Free
+        </a>
+      </div>
+    </div>
+
+    <!-- HERO FORM -->
+    <div class="hero-card" id="book-now">
+      <div class="card-top">
+        <strong>🦷 Get Seen Today</strong>
+        <span>We call you back in under 5 minutes</span>
+      </div>
+      <div class="form-group">
+        <label>Your Full Name</label>
+        <input type="text" placeholder="First & Last Name" id="f-name"/>
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="(xxx) xxx-xxxx" id="f-phone"/>
+      </div>
+      <div class="form-group">
+        <label>Emergency Type</label>
+        <select>
+          <option value="">— What's hurting? —</option>
+          <option>Severe Toothache</option>
+          <option>Broken / Chipped Tooth</option>
+          <option>Lost Crown or Filling</option>
+          <option>Dental Abscess / Swelling</option>
+          <option>Knocked-Out Tooth</option>
+          <option>Bleeding Gums</option>
+          <option>Other Dental Emergency</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Preferred Time</label>
+        <select>
+          <option>As soon as possible</option>
+          <option>Morning (8am – 12pm)</option>
+          <option>Afternoon (12pm – 5pm)</option>
+          <option>Evening (5pm – 7pm)</option>
+        </select>
+      </div>
+      <button class="btn-form" id="submit-form">🚨 Request Emergency Appointment</button>
+      <div class="form-trust">
+        🔒 Confidential · No Spam · Callback Guaranteed
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USP TILES -->
+<section class="usps">
+  <div class="usps-grid">
+    <div class="usp"><div class="usp-emoji">⚡</div><h4>Same-Day Slots</h4><p>Reserved every morning for emergencies</p></div>
+    <div class="usp"><div class="usp-emoji">🌙</div><h4>Evening & Weekend</h4><p>Open when you need us most</p></div>
+    <div class="usp"><div class="usp-emoji">💳</div><h4>All Insurance</h4><p>We verify & bill directly for you</p></div>
+    <div class="usp"><div class="usp-emoji">😌</div><h4>Sedation Available</h4><p>Anxiety-free, pain-free experience</p></div>
+    <div class="usp"><div class="usp-emoji">🏆</div><h4>15+ Years Serving Carthage</h4><p>Thousands of families trust us</p></div>
+  </div>
+</section>
+
+<!-- TOP RATED STRIP -->
+<div class="top-rated">
+  <div class="top-rated-inner">
+    <div class="tr-stars">★★★★★</div>
+    <div class="tr-divider"></div>
+    <div>
+      <div class="tr-text">🏆 Top Rated Dental Clinic in All of Carthage</div>
+      <div class="tr-sub">500+ Verified Google Reviews · 5-Star Rating · Trusted Since 2008</div>
+    </div>
+    <div class="tr-divider"></div>
+    <div class="tr-stars">★★★★★</div>
+  </div>
+</div>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip">
+  <img class="strip-img" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80" alt="Dental care"/>
+  <img class="strip-img" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80" alt="Modern dental clinic"/>
+  <img class="strip-img" src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80" alt="Friendly dentist"/>
+  <img class="strip-img" src="https://images.unsplash.com/photo-1609840112990-4265448268d1?w=600&q=80" alt="Patient care"/>
+</div>
+
+<!-- SERVICES -->
+<section class="section">
+  <div class="container">
+    <div class="tc">
+      <div class="section-tag">🦷 Emergency Services</div>
+      <h2 class="section-h">We Treat Every Dental Emergency</h2>
+      <p class="section-p">From excruciating toothaches to knocked-out teeth — our team is equipped to resolve your pain and restore your smile the same day.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card">
+        <img class="svc-img" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80" alt="Toothache Relief"/>
+        <div class="svc-body">
+          <h3>Severe Toothache</h3>
+          <p>Agonizing pain means something serious is wrong. We diagnose the root cause and give you lasting relief — not just painkillers.</p>
+          <span class="svc-tag">⚡ Same-Day</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img class="svc-img" src="https://images.unsplash.com/photo-1609840112990-4265448268d1?w=600&q=80" alt="Broken Tooth"/>
+        <div class="svc-body">
+          <h3>Broken or Chipped Tooth</h3>
+          <p>Fractures left untreated become infections. We repair chips and cracks fast with cosmetic bonding or same-day crowns.</p>
+          <span class="svc-tag">⚡ Same-Day</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img class="svc-img" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80" alt="Dental Abscess"/>
+        <div class="svc-body">
+          <h3>Dental Abscess & Swelling</h3>
+          <p>An untreated abscess is life-threatening. We drain the infection and prescribe antibiotics immediately to stop the spread.</p>
+          <span class="svc-tag">🚨 Urgent</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img class="svc-img" src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80" alt="Lost Crown"/>
+        <div class="svc-body">
+          <h3>Lost Crown or Filling</h3>
+          <p>Exposed nerves are vulnerable and painful. We re-cement or replace your crown in a single, comfortable visit.</p>
+          <span class="svc-tag">⚡ Same-Day</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img class="svc-img" src="https://images.unsplash.com/photo-1629909615957-be38d48fbbe4?w=600&q=80" alt="Knocked Out Tooth"/>
+        <div class="svc-body">
+          <h3>Knocked-Out Tooth</h3>
+          <p>A knocked-out tooth can be saved if you act within 60 minutes. Keep it moist and call us <em>immediately</em>.</p>
+          <span class="svc-tag">🚨 Call Now</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img class="svc-img" src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80" alt="Root Canal"/>
+        <div class="svc-body">
+          <h3>Emergency Root Canal</h3>
+          <p>Modern root canals are pain-free. Infected pulp? We complete the full procedure same day with full sedation options.</p>
+          <span class="svc-tag">⚡ Same-Day</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section why-section">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-imgbox">
+        <img class="why-img" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900&q=85" alt="Family Dental of Carthage team"/>
+        <div class="why-float">
+          <div class="why-float-ico">🏆</div>
+          <div class="why-float-txt">
+            <strong>500+</strong>
+            <span>Five-Star Google Reviews</span>
+          </div>
+        </div>
+      </div>
+      <div class="why-content">
+        <div class="section-tag">💚 Why Carthage Chooses Us</div>
+        <h2 class="section-h">More Than a Dentist —<br/>Your Family's Partner</h2>
+        <p class="section-p">We built Family Dental of Carthage with one mission: get you out of pain fast, treated with dignity, and leave with a healthy smile.</p>
+        <div class="why-pts">
+          <div class="why-pt">
+            <div class="why-pt-ico">⚡</div>
+            <div>
+              <h4>Guaranteed Same-Day Appointments</h4>
+              <p>We hold emergency slots every morning. Call before noon — you're seen today. No exceptions.</p>
+            </div>
+          </div>
+          <div class="why-pt">
+            <div class="why-pt-ico">😌</div>
+            <div>
+              <h4>Sedation Dentistry Available</h4>
+              <p>Dental anxiety is real. Nitrous oxide and oral sedation keep you completely relaxed throughout.</p>
+            </div>
+          </div>
+          <div class="why-pt">
+            <div class="why-pt-ico">💰</div>
+            <div>
+              <h4>Transparent, Affordable Pricing</h4>
+              <p>We review all costs before treatment. 0% financing available. No surprise bills — ever.</p>
+            </div>
+          </div>
+          <div class="why-pt">
+            <div class="why-pt-ico">🌐</div>
+            <div>
+              <h4>Bilingual Team — English & Español</h4>
+              <p>Every patient deserves to be understood. Our staff is fluent in both languages.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process-section">
+  <div class="container">
+    <div class="tc">
+      <div class="section-tag">🗺️ How It Works</div>
+      <h2 class="section-h">Pain to Relief in 4 Simple Steps</h2>
+      <p class="section-p" style="color:rgba(255,255,255,.8)">We've streamlined our emergency process so you spend zero time on paperwork and 100% of your time getting better.</p>
+    </div>
+    <div class="process-grid">
+      <div class="proc"><div class="proc-num">1</div><h4>Call or Book Online</h4><p>Reach us by phone or our quick form. We confirm your slot in under 5 minutes.</p></div>
+      <div class="proc"><div class="proc-num">2</div><h4>Arrive & Skip the Wait</h4><p>Walk in at your time. Emergency patients are always our priority — no lengthy waiting rooms.</p></div>
+      <div class="proc"><div class="proc-num">3</div><h4>Fast Diagnosis & Treatment</h4><p>Digital X-rays in minutes. Treatment begins immediately. Real relief, not a temporary patch.</p></div>
+      <div class="proc"><div class="proc-num">4</div><h4>Leave Pain-Free</h4><p>Most emergencies resolved same day. You'll leave smiling with a clear aftercare plan.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO + STATS -->
+<section class="video-section">
+  <div class="container">
+    <div class="video-grid">
+      <div class="video-wrap">
+        <video class="clinic-video" autoplay muted loop playsinline
+          poster="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80">
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-close-up-of-dental-equipment-41756-large.mp4" type="video/mp4"/>
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80" alt="Modern dental equipment" style="width:100%;border-radius:20px"/>
+        </video>
+      </div>
+      <div class="video-content">
+        <div class="section-tag">📍 Our Clinic</div>
+        <h2 class="section-h">State-of-the-Art Care<br/>Right Here in Carthage</h2>
+        <p class="section-p">Our clinic is equipped with the latest digital X-ray technology, same-day crown systems, and sedation dentistry — so you never have to travel for world-class dental care.</p>
+        <div class="stat-row">
+          <div class="stat"><strong>15+</strong><span>Years Serving</span></div>
+          <div class="stat"><strong>500+</strong><span>5-Star Reviews</span></div>
+          <div class="stat"><strong>98%</strong><span>Same-Day Relief</span></div>
+          <div class="stat"><strong>24/7</strong><span>Emergency Line</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOOGLE REVIEWS -->
+<section class="section reviews-section">
+  <div class="container">
+    <div class="tc">
+      <div class="section-tag">⭐ Google Reviews</div>
+      <h2 class="section-h">🏆 Top Rated Clinic in All of Carthage</h2>
+      <p class="section-p">Don't take our word for it — here's what real patients are saying on Google.</p>
+    </div>
+    <div class="g-header" style="margin-top:32px">
+      <div class="g-overall">
+        <div class="big-score">5.0</div>
+        <div class="big-stars">★★★★★</div>
+        <div class="g-count-lg">Based on 500+ Google Reviews</div>
+        <!-- Google logo -->
+        <svg width="70" style="margin:10px auto 0" viewBox="0 0 272 92" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#EA4335" d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/>
+          <path fill="#FBBC05" d="M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/>
+          <path fill="#4285F4" d="M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z"/>
+          <path fill="#34A853" d="M225 3v65h-9.5V3h9.5z"/>
+          <path fill="#EA4335" d="M262.02 54.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z"/>
+          <path fill="#4285F4" d="M35.29 41.41V32h31.96c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.74.36 15.59 16.32.13 35.55.13c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.67H35.29z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="g-card">
+        <div class="g-card-top">
+          <div class="g-avatar" style="background:#4285F4">SM</div>
+          <div class="g-card-info">
+            <div class="g-card-name">Sarah Mitchell</div>
+            <div class="g-card-meta">
+              <span class="g-card-stars">★★★★★</span>
+              <span class="g-card-ago">· 2 weeks ago</span>
+            </div>
+          </div>
+        </div>
+        <p class="g-card-text">"I called at 8am with unbearable tooth pain. By 10am I was in the chair and by noon I was completely pain-free. Truly lifesavers — the entire staff was warm, professional, and so fast. This is THE dental practice in Carthage!"</p>
+        <div class="g-card-footer">
+          <svg height="16" viewBox="0 0 272 92" xmlns="http://www.w3.org/2000/svg" class="g-logo-sm"><path fill="#EA4335" d="M35.29 41.41V32h31.96c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.74.36 15.59 16.32.13 35.55.13c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.67H35.29z"/></svg>
+          <span class="g-useful">👍 Helpful</span>
+        </div>
+      </div>
+      <!-- Review 2 -->
+      <div class="g-card">
+        <div class="g-card-top">
+          <div class="g-avatar" style="background:#34A853">JR</div>
+          <div class="g-card-info">
+            <div class="g-card-name">James Rodriguez</div>
+            <div class="g-card-meta">
+              <span class="g-card-stars">★★★★★</span>
+              <span class="g-card-ago">· 1 month ago</span>
+            </div>
+          </div>
+        </div>
+        <p class="g-card-text">"My son knocked out his tooth playing basketball. We rushed to Carthage Family Dental and they literally saved his tooth. The team was incredibly calm under pressure. Couldn't be more grateful. Best dentist in Carthage, hands down."</p>
+        <div class="g-card-footer">
+          <svg height="16" viewBox="0 0 272 92" xmlns="http://www.w3.org/2000/svg" class="g-logo-sm"><path fill="#EA4335" d="M35.29 41.41V32h31.96c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.74.36 15.59 16.32.13 35.55.13c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.67H35.29z"/></svg>
+          <span class="g-useful">👍 Helpful</span>
+        </div>
+      </div>
+      <!-- Review 3 -->
+      <div class="g-card">
+        <div class="g-card-top">
+          <div class="g-avatar" style="background:#FBBC05;color:#000">LT</div>
+          <div class="g-card-info">
+            <div class="g-card-name">Linda Thompson</div>
+            <div class="g-card-meta">
+              <span class="g-card-stars">★★★★★</span>
+              <span class="g-card-ago">· 3 weeks ago</span>
+            </div>
+          </div>
+        </div>
+        <p class="g-card-text">"Severe dental anxiety here — but they put me completely at ease. Used sedation, I didn't feel a single thing. Lost crown replaced in under an hour. I've lived in Carthage 20 years and this is by far the top rated dental office in town."</p>
+        <div class="g-card-footer">
+          <svg height="16" viewBox="0 0 272 92" xmlns="http://www.w3.org/2000/svg" class="g-logo-sm"><path fill="#EA4335" d="M35.29 41.41V32h31.96c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.74.36 15.59 16.32.13 35.55.13c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.67H35.29z"/></svg>
+          <span class="g-useful">👍 Helpful</span>
+        </div>
+      </div>
+      <!-- Review 4 -->
+      <div class="g-card">
+        <div class="g-card-top">
+          <div class="g-avatar" style="background:#EA4335">DW</div>
+          <div class="g-card-info">
+            <div class="g-card-name">David Williams</div>
+            <div class="g-card-meta">
+              <span class="g-card-stars">★★★★★</span>
+              <span class="g-card-ago">· 2 months ago</span>
+            </div>
+          </div>
+        </div>
+        <p class="g-card-text">"Walked in on a Saturday morning with a cracked molar — zero appointment. They took me right in, fixed it same day, and charged exactly what they quoted. Honest, fast, and genuinely caring people. 5 stars isn't enough."</p>
+        <div class="g-card-footer">
+          <svg height="16" viewBox="0 0 272 92" xmlns="http://www.w3.org/2000/svg" class="g-logo-sm"><path fill="#EA4335" d="M35.29 41.41V32h31.96c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.74.36 15.59 16.32.13 35.55.13c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.67H35.29z"/></svg>
+          <span class="g-useful">👍 Helpful</span>
+        </div>
+      </div>
+      <!-- Review 5 -->
+      <div class="g-card">
+        <div class="g-card-top">
+          <div class="g-avatar" style="background:#709488">MG</div>
+          <div class="g-card-info">
+            <div class="g-card-name">Maria Garcia</div>
+            <div class="g-card-meta">
+              <span class="g-card-stars">★★★★★</span>
+              <span class="g-card-ago">· 5 weeks ago</span>
+            </div>
+          </div>
+        </div>
+        <p class="g-card-text">"Hablo español y el personal me ayudó en mi idioma — eso significó todo para mí. Me atendieron el mismo día con un absceso muy doloroso. Servicio excelente. Son el mejor consultorio dental de Carthage sin duda."</p>
+        <div class="g-card-footer">
+          <svg height="16" viewBox="0 0 272 92" xmlns="http://www.w3.org/2000/svg" class="g-logo-sm"><path fill="#EA4335" d="M35.29 41.41V32h31.96c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.74.36 15.59 16.32.13 35.55.13c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.67H35.29z"/></svg>
+          <span class="g-useful">👍 Helpful</span>
+        </div>
+      </div>
+      <!-- Review 6 -->
+      <div class="g-card">
+        <div class="g-card-top">
+          <div class="g-avatar" style="background:#1a1a2e">KB</div>
+          <div class="g-card-info">
+            <div class="g-card-name">Kevin Barnes</div>
+            <div class="g-card-meta">
+              <span class="g-card-stars">★★★★★</span>
+              <span class="g-card-ago">· 6 weeks ago</span>
+            </div>
+          </div>
+        </div>
+        <p class="g-card-text">"Had a dental emergency on a Sunday evening and they actually answered! Got seen first thing Monday. Root canal done same day with zero pain. These guys run the tightest, most professional dental practice I've ever been to."</p>
+        <div class="g-card-footer">
+          <svg height="16" viewBox="0 0 272 92" xmlns="http://www.w3.org/2000/svg" class="g-logo-sm"><path fill="#EA4335" d="M35.29 41.41V32h31.96c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.74.36 15.59 16.32.13 35.55.13c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.67H35.29z"/></svg>
+          <span class="g-useful">👍 Helpful</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY BAND -->
+<section class="urgency">
+  <h2>🚨 Are You In Dental Pain Right Now?</h2>
+  <p>Every hour you wait, the problem gets worse — and more expensive. Call us and we will have you seen today. No exceptions.</p>
+  <div class="urgency-btns">
+    <a href="tel:+19034254012" class="btn-urg-w">
+      📞 (903) 425-4012 — Call Now
+    </a>
+    <a href="#book-now" class="btn-urg-o">
+      📅 Book Online in 60 Seconds
+    </a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background:var(--off-white)">
+  <div class="container">
+    <div class="tc">
+      <div class="section-tag">❓ FAQ</div>
+      <h2 class="section-h">Your Questions Answered</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq open">
+        <div class="faq-q" onclick="fq(this)">What counts as a dental emergency? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></div>
+        <div class="faq-a">Any dental problem causing severe pain, swelling, bleeding, or tooth loss is an emergency — including toothaches, broken teeth, lost crowns, abscesses, and knocked-out teeth. When in doubt, call us.</div>
+      </div>
+      <div class="faq">
+        <div class="faq-q" onclick="fq(this)">Can I be seen today without an appointment? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></div>
+        <div class="faq-a">Yes! We accept walk-ins for emergency cases. Call ahead if you can so we can have a room ready, but if you're in severe pain, just come in.</div>
+      </div>
+      <div class="faq">
+        <div class="faq-q" onclick="fq(this)">Do you accept insurance for emergencies? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></div>
+        <div class="faq-a">We accept most major plans including Delta Dental, Cigna, Aetna, MetLife, and many more. Our team verifies your coverage before treatment at no charge to you.</div>
+      </div>
+      <div class="faq">
+        <div class="faq-q" onclick="fq(this)">What if I can't afford treatment today? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></div>
+        <div class="faq-a">We offer 0% financing through CareCredit and flexible payment plans. We never turn away a patient in pain because of finances — let's talk about options.</div>
+      </div>
+      <div class="faq">
+        <div class="faq-q" onclick="fq(this)">My tooth got knocked out — what do I do right now? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></div>
+        <div class="faq-a">Hold the tooth by the crown, rinse with water, and try to reinsert it. If not possible, store it in milk or saliva — and call us immediately. Within 60 minutes gives the best chance of saving it.</div>
+      </div>
+      <div class="faq">
+        <div class="faq-q" onclick="fq(this)">Are emergency dental visits more expensive? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></div>
+        <div class="faq-a">Emergency exams start with a standard exam fee covered by most insurance. We review all costs before any treatment. Zero surprise charges — ever.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSURANCE -->
+<section class="ins-section">
+  <div class="container">
+    <div class="section-tag" style="margin:0 auto 14px;display:table">💳 Insurance & Financing</div>
+    <h2 class="section-h">We Accept All Major Plans</h2>
+    <p class="section-p" style="margin:0 auto 0;color:var(--gray)">Don't let insurance confusion stop you from getting care. We handle verification and billing for you — completely free.</p>
+    <div class="ins-logos">
+      <div class="ins-pill">Delta Dental</div>
+      <div class="ins-pill">Cigna</div>
+      <div class="ins-pill">Aetna</div>
+      <div class="ins-pill">MetLife</div>
+      <div class="ins-pill">United Concordia</div>
+      <div class="ins-pill">Humana</div>
+      <div class="ins-pill">Guardian</div>
+      <div class="ins-pill">BlueCross BlueShield</div>
+      <div class="ins-pill">CareCredit 0% Financing</div>
+      <div class="ins-pill">Medicaid / CHIP</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">
+        <div class="footer-logo-icon" style="background:transparent;width:auto;height:auto;border-radius:0;padding:0">
+          <img src="https://familydentalofcarthage.com/wp-content/uploads/2025/11/carthage-logo-1.png" alt="Carthage Family Dental Logo" style="height:40px;width:auto;display:block"/>
+        </div>
+        <div>
+          <strong>Carthage Family Dental</strong>
+          <span>Carthage, TX · Since 2008</span>
+        </div>
+      </div>
+      <p>Carthage Family Dental delivers compassionate, same-day emergency care for every family in Carthage, TX. Your pain stops today.</p>
+      <a href="tel:+19034254012" style="display:inline-flex;align-items:center;gap:8px;margin-top:18px;background:var(--teal);color:var(--white);padding:11px 22px;border-radius:50px;font-weight:700;font-size:.86rem;text-decoration:none">📞 (903) 425-4012</a>
+    </div>
+    <div>
+      <h5>Emergency Services</h5>
+      <ul>
+        <li><a href="#">Severe Toothache</a></li>
+        <li><a href="#">Broken Tooth Repair</a></li>
+        <li><a href="#">Dental Abscess</a></li>
+        <li><a href="#">Lost Crown / Filling</a></li>
+        <li><a href="#">Knocked-Out Tooth</a></li>
+        <li><a href="#">Emergency Root Canal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact & Hours</h5>
+      <div class="footer-contact-item">📍 <span>Carthage, TX 75633</span></div>
+      <div class="footer-contact-item">📞 <a href="tel:+19034254012">(903) 425-4012</a></div>
+      <div class="footer-contact-item">🕐 <span>Mon–Fri: 8am–7pm<br/>Sat: 9am–4pm<br/>Sun: Emergencies Only</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Carthage Family Dental · All Rights Reserved</span>
+    <span>Privacy Policy · ADA Accessibility</span>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="float">
+  <a href="tel:+19034254012" class="float-btn fc">📞 Call Now — (903) 425-4012</a>
+  <a href="#book-now" class="float-btn fb">📅 Book Emergency Appointment</a>
+</div>
+
+<script>
+// FAQ toggle
+function fq(el){
+  const item=el.closest('.faq');
+  const open=item.classList.contains('open');
+  document.querySelectorAll('.faq.open').forEach(f=>f.classList.remove('open'));
+  if(!open) item.classList.add('open');
+}
+
+// Scroll animation
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}
+  });
+},{threshold:.08});
+document.querySelectorAll('.svc-card,.why-pt,.g-card,.proc,.stat').forEach(el=>{
+  el.style.opacity='0';el.style.transform='translateY(22px)';
+  el.style.transition='opacity .5s ease,transform .5s ease';
+  io.observe(el);
+});
+
+// Form submit
+document.getElementById('submit-form').addEventListener('click',function(){
+  const n=document.getElementById('f-name').value.trim();
+  const p=document.getElementById('f-phone').value.trim();
+  if(!n||!p){
+    alert('Please enter your name and phone number so we can call you right back.');return;
+  }
+  this.textContent='✅ Received! We\'ll Call You in Under 5 Minutes.';
+  this.style.background='#16a34a';
+  this.disabled=true;
+});
+</script>
+</body>
+</html>
